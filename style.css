@@ -1,0 +1,35 @@
+h1 {
+    position: relative;
+    animation: mov 5s forwards;
+    color:rgb(22, 240, 33)
+}
+@keyframes mov{
+    0%{left: 0px;}
+    100%{left: 500px;}
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    animation: changeColor 5s infinite;
+}
+@keyframes changeColor{
+    0% {background-color: red;}
+    25% {background-color:yellow;}
+    50% {background-color:blue;}
+    100% {background-color:red;}
+}
+.menu{
+    margin-top: 10px;
+    padding-right: 10px;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
